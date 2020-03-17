@@ -1,6 +1,6 @@
 # TermDo
 
-## How to run it
+## How to run project
 
 Run main.py script
 
