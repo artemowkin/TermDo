@@ -79,7 +79,6 @@ def run():
         'change': change_item,
         'clear': clear_list,
         'help': get_help,
-        'exit': None,
     }
 
     if os.path.exists(DB_FILE_NAME):
@@ -94,12 +93,12 @@ def run():
         command = input("Give me a command => ").lower()
         if not command:
             continue
+        elif command == 'exit':
+            break
         elif command not in cmd_dict:
             print("WTF?")
         elif command == 'help':
-            cmd_dict[command]()
-        elif command == 'exit':
-            break
+            cmd_dict['help']()
         else:
             cmd_dict[command](todo_list)
 
