@@ -92,10 +92,10 @@ def run():
 
     while True:
         command = input("Give me a command => ").lower()
-        if command and command not in cmd_dict:
-            print("WTF?")
-        elif not command:
+        if not command:
             continue
+        elif command not in cmd_dict:
+            print("WTF?")
         elif command == 'help':
             cmd_dict[command]()
         elif command == 'exit':
