@@ -1,8 +1,8 @@
 import pickle
 import os
 
-from objects import Item, ToDoList
-from threads import SaveCheckThread
+from termdo.objects import Item, ToDoList
+from termdo.threads import SaveCheckThread
 
 DB_FILE_NAME = 'todo.db'
 
